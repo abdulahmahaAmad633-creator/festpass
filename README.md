@@ -6,7 +6,7 @@ FestPass lets students explore upcoming campus events, save favourites, and regi
 
 # I used Claude (an AI assistant) to generate the starting code, then reviewed it and modified it and changed the events, #content and design.
 
-**Live site:** _add your deployed link here_
+**Live site:** (https://abdulahmahaamad633-creator.github.io/festpass/)
 
 ## Features
 - Hero with a live countdown to the next event and a moving event ticker
