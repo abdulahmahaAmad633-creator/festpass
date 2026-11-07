@@ -1,20 +1,18 @@
 // ---------- Event data (edit these!) ----------
 const events = [
-  {id:1,name:"GDG event",cat:"Tech",icon:"💻",color:"#8ecbff",date:"2026-12-12T09:00",venue:"Main Auditorium",seats:120,desc:"24 hours to build a campus-problem solution with your team.",long:"Form a team of up to 4, build a working prototype in 24 hours and pitch it to judges. Food, mentors and cash prizes included."},
-
-  {id:2,name:"React for Beginners",cat:"Workshop",icon:"⚛️",color:"#b8f0d0",date:"2026-12-18T14:00",venue:"Computer Lab 2",seats:40,desc:"Build your first React app from scratch, step by step.",long:"No experience needed. Bring a laptop with Node.js installed and leave with a deployed project."},
-
-  {id:3,name:" Masterchef 3.0",cat:"Cultural",icon:"🎸",color:"#ffc2dc",date:"2027-12-23T18:30",venue:"Open Air Theatre",seats:300,desc:"Food quiz, Black Box Mystery and Cook without Fire.",long:"It explores the mosaic of flavours and traditions across the globe. Gates open at 3 PM, event starts at 6:30 PM."},
-
-  {id:4,name:"Inter-College Quiz",cat:"Contest",icon:"🧠",color:"#ffe49a",date:"2027-01-08T11:00",venue:"Seminar Hall A",seats:60,desc:"Four rounds of tech, general knowledge and pop culture.",long:"Teams of 2 compete across four rounds. The top three teams win trophies and goodies."},
-
-  {id:5,name:"AI & Careers Talk",cat:"Tech",icon:"🤖",color:"#d7c8ff",date:"2027-01-15T15:00",venue:"Conference Room",seats:80,desc:"Engineers share how to start a career in AI.",long:"A 90-minute talk and open Q&A with engineers working in AI, followed by networking."},
-
-  {id:6,name:"Cricket Premier Cup",cat:"Sports",icon:"🏏",color:"#c5f0a4",date:"2027-01-22T08:00",venue:"College Ground",seats:16,desc:"Department teams face off in a one-day T10 tournament.",long:"Register as a team captain. Matches run all day, with the final in the evening."},
-
-  {id:7,name:"Ai Design Bootcamp",cat:"Workshop",icon:"🎨",color:"#ffd2b0",date:"2027-02-05T10:00",venue:"Design Studio",seats:35,desc:"Learn Figma, layout and colour basics in one day.",long:"Design a mobile app screen from scratch and get live feedback from mentors."},
-
-  {id:8,name:"Movie creator content",cat:"Actores",icon:"💻",color:"#ffb3c7",date:"2027-02-14T17:00",venue:"Main Auditorium",seats:150,desc:"group competition across all styles.",long:"Perform for up to 4 minutes. Judges score creativity, rhythm and stage presence."}
+ const events = [
+  {id:1,name:"CodeSprint Hackathon",tags:"coding,laptop",cat:"Tech",icon:"💻",color:"#8ecbff",date:"2027-12-12T09:00",venue:"Main Auditorium",seats:120,desc:"24 hours to build a campus-problem solution with your team.",long:"Form a team of up to 4, build a working prototype in 24 hours and pitch it to judges. Food, mentors and cash prizes included."},
+  {id:2,name:"React for Beginners",tags:"programming,code",cat:"Workshop",icon:"⚛️",color:"#b8f0d0",date:"2027-12-18T14:00",venue:"Computer Lab 2",seats:40,desc:"Build your first React app from scratch, step by step.",long:"No experience needed. Bring a laptop with Node.js installed and leave with a deployed project."},
+  
+  {id:3,name:"Masterchef 3.0",tags:"cooking,chef",cat:"Cultural",icon:"🍳",color:"#ffc2dc",date:"2027-12-23T18:30",venue:"Open Air Theatre",seats:300,desc:"Food quiz, Black Box Mystery and Cook without Fire.",long:"Teams compete in three rounds: a food quiz, a Black Box Mystery ingredient challenge and a cook-without-fire round. Gates open at 6 PM."},
+  
+  {id:4,name:"Inter-College Quiz",tags:"quiz,students",cat:"Contest",icon:"🧠",color:"#ffe49a",date:"2027-01-08T11:00",venue:"Seminar Hall A",seats:60,desc:"Four rounds of tech, general knowledge and pop culture.",long:"Teams of 2 compete across four rounds. The top three teams win trophies and goodies."},
+  {id:5,name:"AI & Careers Talk",tags:"robot,technology",cat:"Tech",icon:"🤖",color:"#d7c8ff",date:"2027-01-15T15:00",venue:"Conference Room",seats:80,desc:"Engineers share how to start a career in AI.",long:"A 90-minute talk and open Q&A with engineers working in AI, followed by networking."},
+  
+  {id:6,name:"Cricket Premier Cup",tags:"cricket,stadium",cat:"Sports",icon:"🏏",color:"#c5f0a4",date:"2027-01-22T08:00",venue:"College Ground",seats:16,desc:"Department teams face off in a one-day T10 tournament.",long:"Register as a team captain. Matches run all day, with the final in the evening."},
+  {id:7,name:"AI Design Bootcamp",tags:"graphic,design",cat:"Workshop",icon:"🎨",color:"#ffd2b0",date:"2027-02-05T10:00",venue:"Design Studio",seats:35,desc:"Learn Figma, layout and colour basics in one day.",long:"Design a mobile app screen from scratch and get live feedback from mentors."},
+  
+  {id:8,name:"Movie Creator Content",tags:"film,camera",cat:"Actors",icon:"🎬",color:"#ffb3c7",date:"2027-02-14T17:00",venue:"Main Auditorium",seats:150,desc:"Group competition for film and content creators.",long:"Teams create and present a short piece of content. Judges score creativity, storytelling and presentation."}
 ];
 
 // ---------- Helpers ----------
