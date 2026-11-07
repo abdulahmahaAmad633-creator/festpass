@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The fest events – Grab your seat</title>
+  <meta name="description" content="Find campus events, save favourites and get your pass in seconds.">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top">Fest<span>Pass</span></a>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#passes">My passes <b id="passCount">0</b></a>
+      <button id="themeBtn" aria-label="Switch light or dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <h1>Your campus.<br>Your calendar.<br>Your pass.</h1>
+    <div class="next" id="next"></div>
+  </section>
+  <div class="belt" aria-hidden="true"><div id="belt"></div></div>
+
+  <main>
+    <section id="events" class="layout">
+      <aside class="side">
+        <h2>Find events</h2>
+        <input id="search" type="search" placeholder="Search events or venues" aria-label="Search events">
+        <p class="lbl">Category</p>
+        <div id="cats" class="cats"></div>
+        <p class="lbl">Sort by</p>
+        <select id="sort" aria-label="Sort events">
+          <option value="date">Soonest first</option>
+          <option value="seats">Fewest seats left</option>
+          <option value="name">Name A–Z</option>
+        </select>
+        <label class="check"><input type="checkbox" id="favOnly"> Show saved only</label>
+      </aside>
+      <div>
+        <p id="count" class="count"></p>
+        <div id="list" class="list"></div>
+        <p id="empty" class="empty" hidden>Nothing found. Clear the search or pick another category.</p>
+      </div>
+    </section>
+
+    <section id="passes" class="passes">
+      <h2>My passes</h2>
+      <div id="passList" class="pass-list"></div>
+    </section>
+  </main>
+  <footer>Thefestevents · A responsive event website project</footer>
+
+  <div id="veil" class="veil" hidden></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" role="dialog" aria-labelledby="dTitle">
+    <button id="closeBtn" class="x" aria-label="Close">✕</button>
+    <div id="dArt" class="art"></div>
+    <div class="d-body">
+      <p id="dCat" class="chip"></p>
+      <h3 id="dTitle"></h3>
+      <p id="dMeta" class="meta"></p>
+      <p id="dDesc"></p>
+      <div class="bar"><i id="dBar"></i></div>
+      <p id="dSeats" class="meta"></p>
+      <div class="row">
+        <button id="dFav" class="ghost">♡ Save</button>
+        <button id="dShare" class="ghost">Copy link</button>
+      </div>
+      <form id="form" novalidate>
+        <h4>Get your pass</h4>
+        <label>Full name<input id="fName" autocomplete="name"><small></small></label>
+        <label>Email<input id="fEmail" type="email" autocomplete="email"><small></small></label>
+        <label>Phone<input id="fPhone" type="tel" inputmode="numeric" placeholder="10-digit mobile number"><small></small></label>
+        <label>Event<select id="fEvent"></select><small></small></label>
+        <button class="go" type="submit">Get my pass</button>
+      </form>
+      <div id="ticket" class="ticket" hidden></div>
+    </div>
+  </aside>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
