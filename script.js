@@ -1,10 +1,10 @@
 // ---------- Event data (edit these!) ----------
 const events = [
-  {id:1,name:"CodeSprint Hackathon",cat:"Tech",icon:"💻",color:"#8ecbff",date:"2026-12-12T09:00",venue:"Main Auditorium",seats:120,desc:"24 hours to build a campus-problem solution with your team.",long:"Form a team of up to 4, build a working prototype in 24 hours and pitch it to judges. Food, mentors and cash prizes included."},
+  {id:1,name:"GDG event",cat:"Tech",icon:"💻",color:"#8ecbff",date:"2026-12-12T09:00",venue:"Main Auditorium",seats:120,desc:"24 hours to build a campus-problem solution with your team.",long:"Form a team of up to 4, build a working prototype in 24 hours and pitch it to judges. Food, mentors and cash prizes included."},
 
   {id:2,name:"React for Beginners",cat:"Workshop",icon:"⚛️",color:"#b8f0d0",date:"2026-12-18T14:00",venue:"Computer Lab 2",seats:40,desc:"Build your first React app from scratch, step by step.",long:"No experience needed. Bring a laptop with Node.js installed and leave with a deployed project."},
 
-  {id:3,name:"Winter Beats Night",cat:"Cultural",icon:"🎸",color:"#ffc2dc",date:"2027-12-23T18:30",venue:"Open Air Theatre",seats:300,desc:"Live bands, solo singing and a DJ finale under the stars.",long:"Student bands play original and cover sets. Gates open at 6 PM, music starts at 6:30 PM."},
+  {id:3,name:" Masterchef 3.0",cat:"Cultural",icon:"🎸",color:"#ffc2dc",date:"2027-12-23T18:30",venue:"Open Air Theatre",seats:300,desc:"Food quiz, Black Box Mystery and Cook without Fire.",long:"It explores the mosaic of flavours and traditions across the globe. Gates open at 3 PM, event starts at 6:30 PM."},
 
   {id:4,name:"Inter-College Quiz",cat:"Contest",icon:"🧠",color:"#ffe49a",date:"2027-01-08T11:00",venue:"Seminar Hall A",seats:60,desc:"Four rounds of tech, general knowledge and pop culture.",long:"Teams of 2 compete across four rounds. The top three teams win trophies and goodies."},
 
