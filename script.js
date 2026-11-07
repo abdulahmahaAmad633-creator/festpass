@@ -9,7 +9,7 @@ const events = [
   {id:7,name:"AI Design Bootcamp",tags:"graphic,design",cat:"Workshop",icon:"🎨",color:"#ffd2b0",date:"2027-02-05T10:00",venue:"Design Studio",seats:35,desc:"Learn Figma, layout and colour basics in one day.",long:"Design a mobile app screen from scratch and get live feedback from mentors."},
   {id:8,name:"Movie Creator Content",tags:"film,camera",cat:"Actors",icon:"🎬",color:"#ffb3c7",date:"2027-02-14T17:00",venue:"Main Auditorium",seats:150,desc:"Group competition for film and content creators.",long:"Teams create and present a short piece of content. Judges score creativity, storytelling and presentation."}
 ];
-const photos = {
+const photos = { 
   1:"hackathon.jpg", 2:"react.jpg", 3:"masterchef.jpg", 4:"quiz.jpg",
   5:"aitalk.jpg", 6:"cricket.jpg", 7:"design.jpg", 8:"movie.jpg"
 
