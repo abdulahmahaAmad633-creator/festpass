@@ -2,6 +2,10 @@
 
 FestPass lets students explore upcoming campus events, save favourites, and register to get a digital pass.
 
+## Made by: [Abdullah], [kiit], [2026/csse]
+
+# I used Claude (an AI assistant) to generate the starting code, then reviewed it and modified it and changed the events, #content and design.
+
 **Live site:** _add your deployed link here_
 
 ## Features
