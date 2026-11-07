@@ -9,7 +9,10 @@ const events = [
   {id:7,name:"AI Design Bootcamp",tags:"graphic,design",cat:"Workshop",icon:"🎨",color:"#ffd2b0",date:"2027-02-05T10:00",venue:"Design Studio",seats:35,desc:"Learn Figma, layout and colour basics in one day.",long:"Design a mobile app screen from scratch and get live feedback from mentors."},
   {id:8,name:"Movie Creator Content",tags:"film,camera",cat:"Actors",icon:"🎬",color:"#ffb3c7",date:"2027-02-14T17:00",venue:"Main Auditorium",seats:150,desc:"Group competition for film and content creators.",long:"Teams create and present a short piece of content. Judges score creativity, storytelling and presentation."}
 ];
-
+const photos = {
+  1:"hackathon.jpg", 2:"react.jpg", 3:"masterchef.jpg", 4:"quiz.jpg",
+  5:"aitalk.jpg", 6:"cricket.jpg"
+};
 // ---------- Helpers ----------
 const $ = s => document.querySelector(s);
 const read = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } };
@@ -43,8 +46,8 @@ function renderList(){
   $("#list").innerHTML = list.map(e => {
     const d = dateOf(e), l = left(e);
     return `<article class="tk">
-      <img class="thumb" src="https://loremflickr.com/600/300/${e.tags}?lock=${e.id}" alt="${e.name}" loading="lazy" onerror="this.remove()">
-      <div class="date"><b>${d.getDate()}</b>${d.toLocaleString("en-IN",{month:"short"})}</div>
+      <img class="thumb" src="${photos[e.id]}" alt="${e.name}" loading="lazy" onerror="this.onerror=null;this.src='https://loremflickr.com/600/300/${e.tags}?lock=${e.id}'">
+    <div class="date"><b>${d.getDate()}</b>${d.toLocaleString("en-IN",{month:"short"})}</div>
       <div class="tk-body"><span class="chip">${e.cat}</span><h3>${e.icon} ${e.name}</h3>
         <p>${e.desc}</p><p class="meta">📍 ${e.venue} · ${d.toLocaleTimeString("en-IN",{hour:"numeric",minute:"2-digit"})} · <span class="${l<=10?"low":""}">${l?l+" seats left":"Sold out"}</span></p></div>
       <div class="tk-side"><button class="heart" data-fav="${e.id}" aria-label="Save event">${favs.includes(e.id)?"♥":"♡"}</button><button data-open="${e.id}">Details</button></div>
