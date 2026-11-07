@@ -11,7 +11,7 @@ const events = [
 ];
 const photos = {
   1:"hackathon.jpg", 2:"react.jpg", 3:"masterchef.jpg", 4:"quiz.jpg",
-  5:"aitalk.jpg", 6:"cricket.jpg"
+  5:"aitalk.jpg", 6:"cricket.jpg 7:"design.jpg", 8:"movie.jpg"
 };
 // ---------- Helpers ----------
 const $ = s => document.querySelector(s);
