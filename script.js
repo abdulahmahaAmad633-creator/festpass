@@ -50,8 +50,8 @@ function renderList(){
   $("#list").innerHTML = list.map(e => {
     const d = dateOf(e), l = left(e);
      return `<article class="tk">
-      <img class="thumb" src="https://picsum.photos/seed/festpass${e.id}/600/300" alt="${e.name}" loading="lazy" onerror="this.remove()">
-      <div class="date"><b>${d.getDate()}</b>${d.toLocaleString("en-IN",{month:"short"})}</div>
+<img class="thumb" src="https://loremflickr.com/600/300/${e.tags}?lock=${e.id}" alt="${e.name}" loading="lazy" onerror="this.remove()">
+<div class="date"><b>${d.getDate()}</b>${d.toLocaleString("en-IN",{month:"short"})}</div>
       <div class="tk-body"><span class="chip">${e.cat}</span><h3>${e.icon} ${e.name}</h3>
         <p>${e.desc}</p><p class="meta">📍 ${e.venue} · ${d.toLocaleTimeString("en-IN",{hour:"numeric",minute:"2-digit"})} · <span class="${l<=10?"low":""}">${l?l+" seats left":"Sold out"}</span></p></div>
       <div class="tk-side"><button class="heart" data-fav="${e.id}" aria-label="Save event">${favs.includes(e.id)?"♥":"♡"}</button><button data-open="${e.id}">Details</button></div>
